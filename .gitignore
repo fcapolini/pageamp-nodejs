@@ -2,3 +2,4 @@ dist/.ub1/client/*
 dist/index.js
 dist/index.js.map
 dist/playground
+dist/pages
