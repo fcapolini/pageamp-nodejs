@@ -1,3 +1,4 @@
 dist/.ub1/client/*
-dist/.ub1/ub1-node.js
-dist/.ub1/ub1-node.js.map
+dist/index.js
+dist/index.js.map
+dist/playground

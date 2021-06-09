@@ -1,4 +1,4 @@
---js dist/.ub1/ub1-node.js
+--js dist/index.js
 --class-path src
 --class-path ../ub1-core/src
 --main ub1.NodeServer
