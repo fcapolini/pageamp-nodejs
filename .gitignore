@@ -1,4 +1,4 @@
-dist/.ub1/client/*
+dist/.pageamp/client/*
 dist/index.js
 dist/index.js.map
 dist/playground

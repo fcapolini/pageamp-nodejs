@@ -1,4 +1,4 @@
-package ub1;
+package pageamp;
 
 import js.node.Fs;
 import js.node.Http;
@@ -7,7 +7,7 @@ import js.node.http.IncomingMessage;
 import js.node.http.ServerResponse;
 
 using StringTools;
-using ub1.lib.PropertyTools;
+using pageamp.lib.PropertyTools;
 
 
 class NodeServer {
@@ -37,8 +37,8 @@ class NodeServer {
 
 	static function servePage(root:String, path:String, domain:String, res:ServerResponse) {
 		try {
-			//TODO: async Ub1Server.load()
-			var page = Ub1Server.load(root, path, domain, true);
+			//TODO: async Server.load()
+			var page = Server.load(root, path, domain, true);
 			res.writeHead(200, {"Content-Type": "text/html"});
 			res.end(page.doc.toString());
 		} catch (ex:Dynamic) {

@@ -1,17 +1,17 @@
-package ub1;
+package pageamp;
 
 import js.Syntax;
 
 using StringTools;
-using ub1.lib.DomTools;
+using pageamp.lib.DomTools;
 
 
 class NodeClient {
 
 	public static function main() {
 		var doc = DomTools.domDefaultDoc();
-		var pageProps = Syntax.code('window.ub1Props');
-		Ub1Client.load(doc, pageProps);
+		var pageProps = Syntax.code('window.pageampProps');
+		Client.load(doc, pageProps);
 	}
 
 }

@@ -1,27 +1,27 @@
 --js dist/index.js
 --class-path src
---class-path ../ub1-core/src
---main ub1.NodeServer
+--class-path ../pageamp/src
+--main pageamp.NodeServer
 --define HTML_EXTENSIONS
 --library hscript
 --define hscriptPos
 --library hxnodejs
 --define js-es=6
---macro patchTypes('../ub1-core/src/ub1/hscript/interpTypePatch')
+--macro patchTypes('../pageamp/src/pageamp/hscript/interpTypePatch')
 --debug
 
 --next
 
---js dist/.ub1/client/ub1.js
+--js dist/.pageamp/client/pageamp.js
 --class-path src
---class-path ../ub1-core/src
+--class-path ../pageamp/src
 --class-path ../feffects
---main ub1.NodeClient
+--main pageamp.NodeClient
 --define client
 --define HTML_EXTENSIONS
 --define feffects
 --library hscript
 --define hscriptPos
---macro patchTypes('../ub1-core/src/ub1/hscript/interpTypePatch')
+--macro patchTypes('../pageamp/src/pageamp/hscript/interpTypePatch')
 --debug
 --dce std
