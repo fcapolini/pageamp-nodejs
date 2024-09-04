@@ -33,6 +33,7 @@ class NodeServer {
 			});
 		});
 		server.listen(3000);
+		Sys.println('http://localhost:3000/');
 	}
 
 	static function servePage(root:String, path:String, domain:String, res:ServerResponse) {
